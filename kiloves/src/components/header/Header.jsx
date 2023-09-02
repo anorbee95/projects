@@ -5,21 +5,20 @@ import HeaderSocial from './HeaderSocials'
 
 const Header = () => {
   return (
-    <header>
-      <div className="container header__container">
-        <h5>Üdvözöllek a </h5>
-        <h1>🚀 KILÖVÉS 🚀</h1>
-        <h5 className="text-light">vagyis a legjobb ivós társas oldalán!</h5>
-        <CTA />
-        <HeaderSocial />
+      <header id='home'>
+        <div className="container header__container">
+          <h5>Üdvözöllek a </h5>
+          <h1>🚀 KILÖVÉS 🚀</h1>
+          <h5 className="text-light">vagyis a legjobb ivós társas oldalán!</h5>
+          <CTA />
+          <HeaderSocial />
+          <div className="header-img">
+            <img src={KILOVES} alt="kiloves" />
+          </div>
 
-        <div className="header-img">
-          <img src={KILOVES} alt="kiloves" />
+          <a href="#kapcsolat" className='scroll__down'>Ugorj a végére</a>
         </div>
-
-        <a href="#contact" className='scroll__down'>Ugorj a végére</a>
-      </div>
-    </header>
+      </header>
   )
 }
 

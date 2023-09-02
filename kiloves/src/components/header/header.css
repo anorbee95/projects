@@ -78,8 +78,13 @@ header {
 @media screen and (max-width: 600px) {
   header {
     padding-top: 4rem;
+    height: 35rem;
   }
-  .header__socials {
+  .header-img {
+    width: 24rem;
+  }
+  .header__socials,
+  .scroll__down {
     display: none;
   }
   .cta {
