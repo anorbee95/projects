@@ -10,7 +10,7 @@ const data = [
     id: 1,
     image: IMG1,
     title: 'KARAOKEE - Egy kis nehezítéssel - szigorúan monoton hangon',
-    link: '/karaokee',
+    link: '/karaoke',
   },
   {
     id: 2,
