@@ -1,0 +1,163 @@
+.minigame__container {
+    display: grid;
+    place-items: center;
+    width: 50%;
+}
+
+.minigame__item {
+    width: 100%;
+    background: var(--color-bg-variant);
+    padding: 3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.minigame__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.minigame__item-image {
+    margin: 2rem auto;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.minigame__item-image img {
+    max-height: 25rem;
+    object-fit: cover;
+    object-position: 50% 50%;
+    transition: 0.5s ease-in-out;
+}
+
+.minigame__item-image img:hover {
+    scale: 1.1;
+}
+
+
+.minigame__item h3 {
+    margin: 1.2rem 0 2rem;
+}
+
+.minigame__item-cta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rules-desc {
+    max-width: 100%;
+    margin: 1.2rem 0;
+}
+
+.qna {
+    height: 13rem;
+}
+
+#guess-who .qna {
+    height: 20rem;
+}
+
+#karaoke .qna {
+    height: 18rem;
+}
+
+#activity .qna {
+    height: 14rem;
+}
+
+.icon {
+    padding-top: 0.3rem;
+    cursor: pointer;
+}
+
+.red {
+    color: rgba(220, 20, 60, 0.5);
+    margin-bottom: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.green {
+    color: palegreen;
+    margin-bottom: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.blur-text {
+    opacity: 0.5;
+    transition: opacity 0.7s ease;
+    color: transparent;
+    text-shadow: 0 0 25px rgb(255, 255, 255);
+}
+
+.visible-text {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.answer {
+    font-size: 2rem;
+}
+
+.minigame__container .btn {
+    width: 100%;
+}
+
+.minigame__container li {
+    margin-bottom: 0.5rem;
+}
+
+.first {
+    opacity: 0.25;
+    text-shadow: 0 0 1rem crimson;
+}
+
+.second {
+    opacity: 0.6;
+    text-shadow: 0 0 1rem yellow;
+}
+
+.third {
+    opacity: 0.9;
+    text-shadow: 0 0 1rem lime;
+}
+
+i {
+    display: list-item;
+    font-size: 0.75rem;
+}
+
+#activity h3 {
+    margin: 1rem;
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+    .minigame__container {
+        width: 90%;
+    }
+
+    .answer {
+        font-size: 1.4rem;
+    }
+
+    .minigame__container h3 {
+        font-size: 1rem;
+    }
+
+    .minigame__container h2 {
+        font-size: 1rem;
+    }
+
+    #guess-who .qna {
+        height: 23rem;
+    }
+
+    #karaoke .qna {
+        height: 16rem;
+    }
+}
