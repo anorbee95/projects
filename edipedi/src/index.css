@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #F2939B;
+  --secondary-color: #F8CBDB;
+  --variant-color: #4D3A4D;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right top, var(--primary-color), var(--secondary-color));
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  text-decoration: none;
+  color: var(--variant-color);
+}
+
+.circle-1,
+.circle-2 {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+  height: 15vw;
+  width: 15vw;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-1 {
+  top: 5%;
+  right: -5%;
+}
+
+.circle-2 {
+  bottom: 5%;
+  left: -5%;
+}
+
+.alert-primary {
+  background: linear-gradient(to left bottom, var(--primary-color), var(--secondary-color));
+  border: none;
+  border-radius: 1rem;
+  color: white;
+}
+
+.nav-link {
+  color: var(--variant-color);
+  transition: 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-pills .nav-link.active {
+  background: linear-gradient(to left bottom, var(--primary-color), var(--secondary-color));
+}
+
+.design-badge {
+  padding: 1rem 12vw;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .tab-content {
+    padding: 2rem 0.5rem !important;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .tab-content .intro-text {
+    font-size: 1rem !important;
+  }
+
+  .insta-badge {
+    display: none;
+  }
+}

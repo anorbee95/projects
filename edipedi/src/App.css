@@ -1,0 +1,18 @@
+#root {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#edipedi-dash {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  backdrop-filter: blur(4vh);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+#edipedi-dash-nav {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}

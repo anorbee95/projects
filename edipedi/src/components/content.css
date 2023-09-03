@@ -1,0 +1,191 @@
+:root {
+    --primary: #F2939B;
+    --secondary: #F8CBDB;
+    --variant: #4D3A4D;
+}
+
+/* -----------INTRO----------- */
+
+.intro-text {
+    text-align: justify;
+}
+
+/* -----------SERVICES----------- */
+
+.carousel-item img {
+    object-fit: fill;
+    width: 48rem;
+    height: 30rem;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+.carousel-caption {
+    height: 80%;
+    margin: 2rem 1rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.carousel-caption * {
+    color: var(--variant-color);
+}
+
+.carousel-caption p {
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+/* -----------PRICELIST----------- */
+
+.arlista {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.arlista th,
+.arlista td {
+    text-align: left;
+    padding: 8px 12px;
+}
+
+.arlista th {
+    background: linear-gradient(to left bottom, var(--primary-color), var(--secondary-color));
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.arlista th[colspan="2"] {
+    background: linear-gradient(to left bottom, var(--primary-color), var(--secondary-color));
+    color: white;
+    font-size: 18px;
+}
+
+.arlista tr:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+.arlista thead th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.arlista tbody tr:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+.arlista tbody td {
+    background-color: white;
+    color: var(--variant-color);
+}
+
+.arlista tbody tr:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+/* -----------CONTACT----------- */
+
+#kapcsolat {
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.flex {
+    display: flex;
+    text-decoration: none;
+    color: #333;
+    margin: 10px 0;
+}
+
+.flex:hover {
+    color: #F2939B;
+}
+
+.flex img {
+    height: 3vh;
+    margin-right: 10px;
+}
+
+iframe {
+    height: 20rem;
+    width: 40rem;
+    border-radius: 1rem;
+
+}
+
+.icon {
+    font-size: 3vh;
+    color: #F2939B;
+    margin-right: 10px;
+}
+
+#kapcsolat a {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    #root {
+        width: 100vw;
+    }
+
+    /* -----------INTRO----------- */
+
+    .design-badge {
+        padding: 1rem 40vw !important;
+        background-color: red;
+    }
+
+    /* -----------SERVICES----------- */
+
+    .carousel-item {
+        border-radius: 0.5rem;
+        overflow: hidden;
+        height: 70vh;
+    }
+
+    .carousel-item img {
+        display: none;
+    }
+
+    .carousel-caption {
+        height: 75%;
+        margin: -0.5rem;
+        margin-bottom: 3rem;
+        padding: 1rem;
+        overflow: scroll;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+
+    /* -----------CONTACT----------- */
+
+    #kapcsolat {
+        margin: 0;
+        padding: 0;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .logos {
+        flex-direction: column;
+    }
+
+}
