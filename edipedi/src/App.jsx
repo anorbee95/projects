@@ -12,7 +12,7 @@ const App = () => {
   return (
     <Tab.Container defaultActiveKey="intro">
       <Row id="edipedi-dash">
-        <Col className='p-4' id='edipedi-dash-nav' sm={5} lg={3}>
+        <Col className='p-4' id='edipedi-dash-nav' sm={5} md={4} lg={3}>
           <Image className='pb-2' style={{ width: '50%' }} src={EDINA} roundedCircle />
           <h4 className='mb-1'>Arapovics Edina</h4>
           <small>EdiPedi - Pedikűr</small>
@@ -43,7 +43,7 @@ const App = () => {
             </Alert>
           </a>
         </Col>
-        <Col sm={9}>
+        <Col sm={7} md={8} lg={9}>
           <Tab.Content className='p-5'>
             <Tab.Pane eventKey="intro"><Intro /></Tab.Pane>
             <Tab.Pane eventKey="book"><Book /></Tab.Pane>

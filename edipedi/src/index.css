@@ -5,6 +5,7 @@
 }
 
 body {
+  max-width: 100vw;
   min-height: 100vh;
   background: linear-gradient(to right top, var(--primary-color), var(--secondary-color));
 }
@@ -60,6 +61,13 @@ a {
 .design-badge {
   padding: 1rem 12vw;
   border-radius: 1rem;
+}
+
+@media screen and (max-width: 1420px) {
+  .circle-1,
+  .circle-2 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
